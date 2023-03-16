@@ -1,0 +1,30 @@
+<h2>ToDo</h2>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+    <table>
+      <tr>
+        <td>Description:</td>
+        <td>
+          <input type="text" size="30" formControlName="task">
+        </td>
+      </tr>
+      <tr>
+        <td>Priority:</td>
+        <td>
+            <input type="radio" name="priority" value="high" formControlName="priority">High
+            <input type="radio" name="priority" value="medium" formControlName="priority">Medium
+            <input type="radio" name="priority" value="low" formControlName="priority">Low
+        </td>
+      </tr>
+        <tr>
+            <td>Due:</td>
+            <td>
+            <input type="date" size="30" formControlName="due">
+            </td>
+        </tr>
+        <tr>
+            <button type="submit">Add</button>
+        </tr>
+    </table>
+
+</form>
