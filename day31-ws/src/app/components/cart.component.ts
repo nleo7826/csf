@@ -14,15 +14,11 @@ export class CartComponent {
   removeItemFromCart(item:Item) {
     if (item.quantity > 0) {
       item.quantity--;
-      console.log('>>> removeItemFromCart: ', item.description, item.quantity);
-    } else {
-      const index = this.cart.findIndex(i => i.description === item.description);
-      if (index !== -1) {
-        this.cart.splice(index, 1);
+      if (item.quantity === 0) {
+        this.cart.splice(this.cart.indexOf(item), 1);
       }
-    }
+    } 
+    console.log('>>> removeItemFromCart: ', item.description, item.quantity);
   }
 
-  
-  
 }
