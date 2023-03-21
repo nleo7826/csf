@@ -11,8 +11,10 @@ export class InventoryComponent {
 
   @Input()
     items: Item[] = [ 
-    { description: 'Item 1', quantity: 0},
-    { description: 'Item 2', quantity: 0}
+    { img:'coke', description: 'Coca Cola', quantity: 0},
+    { img:'sprite', description: 'Sprite', quantity: 0},
+    { img:'green-tea', description: 'Pokka Green Tea', quantity: 0},
+    { img:'100plus', description: '100 Plus', quantity: 0},
   ]
 
   @Output() 
