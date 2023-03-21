@@ -1,6 +1,6 @@
 
 import { Component, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { Task } from '../models';
 

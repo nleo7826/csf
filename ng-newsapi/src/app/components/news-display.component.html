@@ -1,0 +1,15 @@
+<div>
+    <h3>News</h3>
+    <table>
+        <tr>Title</tr>
+            <tr *ngFor="let n of news">
+                <td><code>{{ n.title }}</code></td>
+        <tr>Author</tr>
+            <tr *ngFor="let n of news">
+                <td><code>{{ n.author }}</code></td>
+        <tr>Description</tr>
+            <tr *ngFor="let n of news">
+                <td><code>{{ n.description }}</code></td>
+            </tr>
+    </table>
+  </div>

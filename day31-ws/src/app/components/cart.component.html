@@ -1,0 +1,12 @@
+<div class="cart">
+    <h2>My Cart</h2>
+    <div *ngFor="let item of cart">
+      <!-- <img [src]="item.image" alt="{{item.description}}"> -->
+      {{item.description}}, Quantity: {{item.quantity}}
+      <button (click)="removeItemFromCart(item)">Remove</button>
+    </div>
+  </div>
+
+  
+  
+  

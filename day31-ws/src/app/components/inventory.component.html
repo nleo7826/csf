@@ -1,0 +1,12 @@
+
+  <div *ngIf="items.length <= 0">
+    <h2>No items to display</h2>
+  </div>
+  <div *ngIf="items.length > 0">
+    <h2>Inventory</h2>
+    <div *ngFor="let item of items">
+      <!-- <img [src]="item.image" alt="{{item.description}}"> -->
+      {{item.description | titlecase}}
+      <button (click)="addItemToCart(item)">Add</button>
+    </div>
+</div>

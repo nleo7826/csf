@@ -1,0 +1,30 @@
+<h1>NEWS HEADLINE</h1>
+
+<form [formGroup]="form" (ngSubmit)="getNews()">
+
+  <table>
+    <tr>
+      <td>Country:</td>
+      <td>
+        <input type="text" size="30" formControlName="country">
+      </td>
+    </tr>
+    <tr>
+      <td>Category:</td>
+      <td>
+        <input type="text" size="30" formControlName="category">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="submit" [disabled]="form.invalid">
+          Get News
+        </button>
+      </td>
+    </tr>
+  </table>
+
+</form>
+
+<app-news-display></app-news-display>
