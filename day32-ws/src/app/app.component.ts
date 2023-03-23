@@ -1,5 +1,5 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
-import { FormGroup, FormArray, FormBuilder } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Task } from './models';
 
 @Component({
@@ -9,10 +9,10 @@ import { Task } from './models';
 })
 export class AppComponent {
   
+  title: any;
   form!: FormGroup
 
   tasks: Task[] = [];
-  title: any;
 
   onNewTask(task: Task) {
     this.tasks.push(task);
