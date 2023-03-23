@@ -1,1 +1,6 @@
-<p>list-tasks works!</p>
+<h2>Task</h2>
+<table>
+  <tr *ngFor="let task of listTask">
+    <td>{{ task.task }} - {{ task.priority }} - {{ task.due | date }}</td>
+  </tr>
+</table>

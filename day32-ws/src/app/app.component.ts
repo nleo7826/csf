@@ -11,10 +11,10 @@ export class AppComponent {
   
   form!: FormGroup
 
-  description: Task[] = [];
+  tasks: Task[] = [];
   title: any;
 
   onNewTask(task: Task) {
-    this.description.push(task);
+    this.tasks.push(task);
   }
 }

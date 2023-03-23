@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
+import { Task } from '../models';
 
 @Component({
   selector: 'app-list-tasks',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ListTasksComponent {
 
+  @Input() 
+  listTask: Task[] = [];
 }
