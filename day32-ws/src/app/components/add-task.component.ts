@@ -15,7 +15,7 @@ export class AddTaskComponent implements OnInit, OnChanges{
   form!: FormGroup
 
   @Output()
-  onNewTask = new Subject<Task>()
+  newTask = new Subject<Task>()
 
   @Input()
   task: Task | null = null
@@ -41,7 +41,7 @@ export class AddTaskComponent implements OnInit, OnChanges{
 
       this.form.reset()
 
-      this.onNewTask.next(value)
+      this.newTask.next(value)
 
       console.info(`task0 = ${task0}`)
       console.info('task1 = ', value)
