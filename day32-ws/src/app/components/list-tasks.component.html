@@ -1,6 +1,13 @@
-<h2>Task</h2>
-<table>
-  <tr *ngFor="let task of listTask">
-    <td>{{ task.task }} - {{ task.priority }} - {{ task.due | date }}</td>
-  </tr>
-</table>
+<div class="tasks">
+    <h1>Task</h1>
+
+    <table *ngFor="let task of listTask">
+    <tr>
+        <td>{{ task.task | titlecase}}</td>
+    </tr>
+    <tr>
+        <td class="priority">{{ task.priority }}</td>
+        <td class="date">{{ task.due | date:"MMM dd" }}</td>
+    </tr>
+    </table>
+</div>

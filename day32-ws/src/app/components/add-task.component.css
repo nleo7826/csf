@@ -1,0 +1,15 @@
+.form {
+    display: inline-block;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+}
+  
+h1 {
+    color: darkorange;
+}
+
+.button {
+    float: right;
+}
+  
