@@ -1,0 +1,37 @@
+<app-user-info>
+
+  <form [formGroup]="form">
+    <div>
+      <button type="submit">Create Order</button>
+      <button type="button" (click)="addToCart()">Add Item</button>
+    </div>
+    <table formArrayName="items">
+      <tr *ngFor="let i of items.controls; let idx = index" [formGroupName]="idx">
+        <td>
+          <input type="text" formControlName="item">
+        </td>
+        <td>
+          <input type="number" formControlName="quantity">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</app-user-info>
+<!--
+<table>
+  <tr>
+    <td width="50%">
+      <app-add-item (onNewItem)="newItem($event)" [item]="selectedItem" >
+        <div>
+          <button type="submit">Add</button>
+          <button type="button" (click)="modifyItem()" #modifyButton>Modify</button>
+        </div>
+      </app-add-item>
+    </td>
+    <td>
+      <app-list-items [items]="items" (onSelection)="itemSelected($event)"></app-list-items>
+    </td>
+  </tr>
+</table>
+-->
