@@ -11,6 +11,9 @@ export class CustomerComponent implements OnInit, OnDestroy {
 
   customerId =  "";
   param$! :  Subscription;
+  queryParams$! :  Subscription;
+
+  fids! : string[];
 
   constructor(private activatedRoute: ActivatedRoute){
 
@@ -24,9 +27,16 @@ export class CustomerComponent implements OnInit, OnDestroy {
           console.log(this.customerId);
         }
       );
+
+      this.queryParams$ = this.activatedRoute.queryParams.subscribe(
+        (queryParams) => {
+          this.fids = queryParams['fids'].split('|');
+        });
   }
 
-  ngOnDestroy(): void{
+  ngOnDestroy(): void {
+    console.log("destroy ... customer");
     this.param$.unsubscribe();
+    this.queryParams$.unsubscribe();
   }
 }
