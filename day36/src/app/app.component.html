@@ -1,0 +1,11 @@
+<div class="box">
+  <a [routerLink]="['/']">Home</a>
+  &nbsp;
+  <a [routerLink]="['/elephant']">Go to Elephant</a>
+  &nbsp;
+  <button type="button" [routerLink]="['/trex']">Go to Trex Page</button>
+  &nbsp;
+  <button type="button" (click)="goToElephant()">Go to Elephant Page</button>
+  
+ </div>
+ <router-outlet></router-outlet>
