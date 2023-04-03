@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.repository;
+package csf.app.server.repository;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
 
-import sg.edu.nus.iss.app.server.model.Comment;
+import csf.app.server.model.Comment;
 
 @Repository
 public class CharacterRepository {

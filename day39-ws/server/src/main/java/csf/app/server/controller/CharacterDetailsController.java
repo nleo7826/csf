@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.controller;
+package csf.app.server.controller;
 
 public class CharacterDetailsController {
     

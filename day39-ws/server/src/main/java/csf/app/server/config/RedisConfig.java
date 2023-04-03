@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.config;
+package csf.app.server.config;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Value;

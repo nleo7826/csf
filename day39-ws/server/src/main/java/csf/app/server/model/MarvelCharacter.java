@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.model;
+package csf.app.server.model;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

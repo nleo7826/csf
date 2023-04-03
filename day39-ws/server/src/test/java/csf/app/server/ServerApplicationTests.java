@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server;
+package csf.app.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

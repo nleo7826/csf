@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.services;
+package csf.app.server.services;
 
 import java.io.IOException;
 import java.util.Date;
@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import sg.edu.nus.iss.app.server.model.Comment;
-import sg.edu.nus.iss.app.server.model.MarvelCharacter;
-import sg.edu.nus.iss.app.server.repository.CharacterRepository;
+import csf.app.server.model.Comment;
+import csf.app.server.model.MarvelCharacter;
+import csf.app.server.repository.CharacterRepository;
 
 @Service
 public class CharacterService {

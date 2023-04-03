@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.services;
+package csf.app.server.services;
 
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import sg.edu.nus.iss.app.server.model.MarvelCharacter;
+import csf.app.server.model.MarvelCharacter;
 
 @Service
 public class MarvelApiService {

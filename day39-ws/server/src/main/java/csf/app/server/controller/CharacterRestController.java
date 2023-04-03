@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.app.server.controller;
+package csf.app.server.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -24,9 +24,9 @@ import jakarta.json.JsonArray;
 import jakarta.json.JsonArrayBuilder;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonObjectBuilder;
-import sg.edu.nus.iss.app.server.services.CharacterService;
-import sg.edu.nus.iss.app.server.model.Comment;
-import sg.edu.nus.iss.app.server.model.MarvelCharacter;
+import csf.app.server.services.CharacterService;
+import csf.app.server.model.Comment;
+import csf.app.server.model.MarvelCharacter;
 
 @RestController
 @RequestMapping(path="/api/characters", consumes = MediaType.APPLICATION_JSON_VALUE, 
